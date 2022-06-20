@@ -1,0 +1,10 @@
+extends ./common/layout
+
+block scripts
+  script(src='/javascripts/request.js')
+
+block content
+  h1= title
+  p Welcome to #{title}
+  button(onclick="moveToRequest()") 요청하러가기
+

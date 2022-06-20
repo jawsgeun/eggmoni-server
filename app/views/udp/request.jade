@@ -1,0 +1,16 @@
+extends ../common/layout
+
+block content
+    h1 메세지 요청
+    form(name="udp-request", method="post")
+        div.input
+            span.label 로봇 UDP 서버 주소
+            input(type="text", name="address" value=address)
+        div.input
+            span.label 로봇 UDP 서버 포트
+            input(type="text", name="port" value=port)
+        div.input
+            span.label 보낼 메세지
+            input(type="text", name="message" value=message)
+        div.actions
+            input(type="submit", value="요청")

@@ -1,4 +1,4 @@
-import app from './app';
+import app from '../app';
 import debug from 'debug';
 import http from 'http';
 
@@ -14,5 +14,6 @@ server.on('error', (error) => {
 });
 
 server.on('listening', () => {
-  debug('eggmoni-server:server')('Listening on ' + port);
+  debug('HTTP')(`listening on ${port}`);
+  console.log(`Server listening on ${port}`);
 });
